@@ -3,7 +3,7 @@ import { useBookDetail } from '../../hooks/useBookDetail';
 import { useParams } from 'react-router-dom';
 
 function BookDetail() {
-  const id = 1; // TODO: Use id from route
+  const { id } = useParams();
   const { book, loading, error } = useBookDetail(id);
 
   if (error)
