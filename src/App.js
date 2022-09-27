@@ -13,11 +13,11 @@ function App() {
       <h1>Library Catalog</h1>
       <Router>
         <Switch>
-          <Route exact path="/books">
-            <BookList />
-          </Route>
           <Route exact path="/books/:id">
             <BookDetail />
+          </Route>
+          <Route path="/books">
+            <BookList />
           </Route>
         </Switch>
       </Router>
