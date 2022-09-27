@@ -15,7 +15,9 @@ function BookDetail() {
 
   if (loading) return <h3>Loading book...</h3>;
 
+ 
   return <Book book={book} showDetail />;
+
 }
 
 export default BookDetail;
